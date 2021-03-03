@@ -1,0 +1,18 @@
+on:
+  - push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Install GHC
+        uses: haskell/actions/setup@v1
+        with:
+          ghc-version: '8.6.5'
+          cabal-version: '3.0.0.0'
+          enable-stack: true
+          stack-version: 'latest'
+      - name: Run Tests
+        run: make test

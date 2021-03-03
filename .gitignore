@@ -1,0 +1,7 @@
+*~
+*.bak
+.DS_Store
+.stack-work/
+\#*
+dist/
+stack.yaml.lock

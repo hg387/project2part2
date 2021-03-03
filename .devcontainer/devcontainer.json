@@ -1,0 +1,17 @@
+{
+	"name": "GHC 8.6.5",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+
+	"containerUser": "cs360",
+
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+	},
+
+	"extensions": [
+		"haskell.haskell"
+	]
+}
